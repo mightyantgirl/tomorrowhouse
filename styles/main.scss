@@ -1,0 +1,14 @@
+@import './constants/colors';//변수선언관련은 가장 최상단으로
+@import './constants/typography';
+
+@import './base/fonts';
+@import './base/normailze';
+@import './base/reset';
+
+@import './layouts/grids';
+
+$covy: #fff;
+
+p {
+  line-height: $covy;
+}
