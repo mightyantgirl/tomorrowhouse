@@ -555,6 +555,13 @@ p {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1020px;
+    padding: 0 30px;
+  }
+}
+
 .col-md-1 {
   width: 8.33333%;
 }
@@ -603,6 +610,13 @@ p {
   width: 100%;
 }
 
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+    padding: 0;
+  }
+}
+
 .col-lg-1 {
   width: 95px;
 }
@@ -649,19 +663,5 @@ p {
 
 .col-lg-12 {
   width: 1140px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 1020px;
-    padding: 0 30px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1140px;
-    padding: 0;
-  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -31,12 +31,10 @@ $gutter: 20px;
 $sm-columns: 4;
 $sm-margin: 5px;
 
-$md-breakpoint: 768px;
 $md-columns: 12;
 $md-margin: 30px;
 $md-max-container: 960px + $md-margin * 2;//마진으로 양옆 30을 잡아먹기떄문에 브라우저 상에서 최대 영역이 900으로 잡힘. 그래서 마진 값*2를 더해주는 것.
 
-$lg-breakpoint: 1280px;
 $lg-columns: 12;
 $lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
@@ -63,29 +61,30 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
         width: percentage($i / $sm-columns);
     }
 }
-@for $i from 1 through $md-columns {
-    .col-md-#{$i} {
-        width: percentage($i / $md-columns);
-    }
-}
-
-@for $i from 1 through $lg-columns {
-    .col-lg-#{$i} {
-        width: ($lg-unit + $gutter) * $i;
-    }
-}
 
 
-@media screen and (min-width: $md-breakpoint) {
+@include responsive(T) {
     .container {
       max-width: $md-max-container;
       padding: 0 $md-margin;
     }
   }
 
-  @media screen and (min-width: $lg-breakpoint) {
+  @for $i from 1 through $md-columns {
+    .col-md-#{$i} {
+        width: percentage($i / $md-columns);
+    }
+}
+
+@include responsive(D) {
     .container {
       max-width: $lg-max-container;
       padding: 0;
     }
   } 
+
+  @for $i from 1 through $lg-columns {
+    .col-lg-#{$i} {
+        width: ($lg-unit + $gutter) * $i;
+    }
+}
