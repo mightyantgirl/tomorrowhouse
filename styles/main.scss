@@ -5,10 +5,6 @@
 @import './base/normailze';
 @import './base/reset';
 
+@import './mixins/text-style';
+
 @import './layouts/grids';
-
-$covy: #fff;
-
-p {
-  line-height: $covy;
-}

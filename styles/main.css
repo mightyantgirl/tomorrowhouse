@@ -487,6 +487,13 @@ button {
   background: none;
 }
 
+p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #8c8d96;
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm
@@ -656,9 +663,5 @@ button {
     max-width: 1140px;
     padding: 0;
   }
-}
-
-p {
-  line-height: #fff;
 }
 /*# sourceMappingURL=main.css.map */
