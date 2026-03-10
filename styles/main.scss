@@ -1,4 +1,4 @@
-@import './constants/colors';//변수선언관련은 가장 최상단으로
+@import './constants/colors'; //변수선언관련은 가장 최상단으로
 @import './constants/typography';
 @import './constants/breakpoint';
 
@@ -11,5 +11,6 @@
 @import './mixins/positions';
 @import './mixins/flexbox';
 
+@import './modules/tags';
 
 @import './layouts/grids';

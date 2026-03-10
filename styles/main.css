@@ -502,6 +502,25 @@ p {
           transform: translate(-50%, -50%);
 }
 
+.tag-red {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  height: 20px;
+  padding: 0 6px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm
