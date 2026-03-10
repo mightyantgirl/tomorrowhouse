@@ -2,16 +2,12 @@
 
 @font-face {
   font-family: 'tomorrow';
-  src: url('./assets/fonts/fonts/tomorrow.eot?uxitjn');
+  src: url('../assets/fonts/fonts/tomorrow.eot');
   src:
-    url('./assets/fonts/fonts/tomorrow.eot?uxitjn#iefix')
-      format('embedded-opentype'),
-    url('./assets/fonts/fonts/tomorrow.ttf?uxitjn') format('truetype'),
-    url('./assets/fonts/fonts/tomorrow.woff?uxitjn') format('woff'),
-    url('./assets/fonts/fonts/tomorrow.svg?uxitjn#tomorrow') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    url('../assets/fonts/fonts/tomorrow.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/fonts/tomorrow.ttf') format('truetype'),
+    url('../assets/fonts/fonts/tomorrow.woff') format('woff'),
+    url('../assets/fonts/fonts/tomorrow.svg#tomorrow') format('svg');
 }
 
 i {
