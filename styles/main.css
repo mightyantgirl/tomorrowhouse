@@ -861,6 +861,49 @@ p {
   color: #8c8d96;
 }
 
+.pagination .page-control {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3f4150;
+  width: 26px;
+  height: 26px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.pagination .page-control {
+  border: 1px solid #e0e2e7;
+}
+
+.pagination .page-control.page-prev .ic-chevron {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.pagination .page-control.page-next .ic-chevron {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.pagination .page-control:hover {
+  opacity: 0.4;
+}
+
+.pagination .page-control .ic-chevron {
+  font-size: 20px;
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm

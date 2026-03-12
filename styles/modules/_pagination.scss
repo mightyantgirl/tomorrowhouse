@@ -1,0 +1,38 @@
+%page-item-base {
+    @include inline-flexbox;
+    @include text-style(16, $primary);
+    width: 26px;
+    height: 26px;
+    font-weight: 700;
+    background-color: $white;
+    border-radius: 4px;
+}
+
+.pagination {
+    .page-control {
+        @extend %page-item-base;
+        border: 1px solid $border;
+
+
+    &.page-prev {
+        .ic-chevron{
+            transform: rotate(90deg);
+        }
+    }
+
+    &.page-next {
+        .ic-chevron{
+            transform: rotate(-90deg);
+        }
+    }
+
+    &:hover {
+        opacity: 0.4;
+    }
+
+    .ic-chevron {
+        font-size: 20px;
+        
+    }
+    }   
+}
