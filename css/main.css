@@ -751,7 +751,7 @@ p {
   color: #8c8d96;
 }
 
-.pagination .page-control {
+.pagination .page-item a, .pagination .page-item button, .pagination .page-control {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -759,18 +759,29 @@ p {
   line-height: 24px;
   letter-spacing: -0.01em;
   color: #3f4150;
-  width: 26px;
   height: 26px;
   font-weight: 700;
   background-color: #fff;
   border-radius: 4px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .pagination .page-control {
+  width: 26px;
   border: 1px solid #e0e2e7;
+}
+.pagination .page-control.page-prev {
+  margin-right: 24px;
 }
 .pagination .page-control.page-prev .ic-chevron {
   transform: rotate(90deg);
+}
+.pagination .page-control.page-next {
+  margin-left: 24px;
 }
 .pagination .page-control.page-next .ic-chevron {
   transform: rotate(-90deg);
@@ -780,6 +791,28 @@ p {
 }
 .pagination .page-control .ic-chevron {
   font-size: 20px;
+}
+.pagination .page-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination .page-item {
+  margin-right: 4px;
+}
+.pagination .page-item.is-active a, .pagination .page-item.is-active button {
+  color: #fff !important;
+  background-color: #3da5f5;
+}
+.pagination .page-item:last-child {
+  margin-right: 0;
+}
+.pagination .page-item a, .pagination .page-item button {
+  min-width: 26px;
+  padding: 0 4px;
+}
+.pagination .page-item a:hover, .pagination .page-item button:hover {
+  color: #3da5f5;
 }
 
 /*

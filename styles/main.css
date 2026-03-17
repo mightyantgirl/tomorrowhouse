@@ -861,7 +861,7 @@ p {
   color: #8c8d96;
 }
 
-.pagination .page-control {
+.pagination .page-control, .pagination .page-item a, .pagination .page-item button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -875,20 +875,40 @@ p {
   line-height: 24px;
   letter-spacing: -0.01em;
   color: #3f4150;
-  width: 26px;
   height: 26px;
   font-weight: 700;
   background-color: #fff;
   border-radius: 4px;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .pagination .page-control {
+  width: 26px;
   border: 1px solid #e0e2e7;
+}
+
+.pagination .page-control.page-prev {
+  margin-right: 24px;
 }
 
 .pagination .page-control.page-prev .ic-chevron {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.pagination .page-control.page-next {
+  margin-left: 24px;
 }
 
 .pagination .page-control.page-next .ic-chevron {
@@ -902,6 +922,40 @@ p {
 
 .pagination .page-control .ic-chevron {
   font-size: 20px;
+}
+
+.pagination .page-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination .page-item {
+  margin-right: 4px;
+}
+
+.pagination .page-item.is-active a, .pagination .page-item.is-active button {
+  color: #fff !important;
+  background-color: #3da5f5;
+}
+
+.pagination .page-item:last-child {
+  margin-right: 0;
+}
+
+.pagination .page-item a, .pagination .page-item button {
+  min-width: 26px;
+  padding: 0 4px;
+}
+
+.pagination .page-item a:hover, .pagination .page-item button:hover {
+  color: #3da5f5;
 }
 
 /*
