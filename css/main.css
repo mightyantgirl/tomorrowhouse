@@ -432,11 +432,13 @@ textarea:focus {
   box-shadow: none;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 0;
   list-style: none;
 }
