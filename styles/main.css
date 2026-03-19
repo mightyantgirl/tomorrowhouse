@@ -475,6 +475,10 @@ button {
   cursor: pointer;
 }
 
+button {
+  padding: 0;
+}
+
 ul,
 ol {
   padding-left: 0;
@@ -1259,5 +1263,73 @@ i {
 
 .col-lg-12 {
   width: 1140px;
+}
+
+.gnb {
+  position: relative;
+  border-bottom: 1px solid #e0e2e7;
+}
+
+.gnb-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.gnb-right .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gnb-icon-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8c8d96;
+}
+
+.gnb-menu-button {
+  color: #3da5f5;
+}
+
+.gnb .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gnb .logo a {
+  display: block;
+}
+
+.gnb .logo img {
+  display: block;
+  width: auto;
+  height: 20px;
 }
 /*# sourceMappingURL=main.css.map */
