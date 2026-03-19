@@ -1114,6 +1114,36 @@ i {
   font-weight: 700;
 }
 
+.gnb-icon-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8c8d96;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.gnb-icon-button.is-menu {
+  color: #3da5f5;
+}
+
+.gnb-icon-button.is-menu:active {
+  color: #3186c4;
+}
+
+.gnb-icon-button:active {
+  color: #3f4150;
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm
@@ -1313,24 +1343,8 @@ i {
   align-items: center;
 }
 
-.gnb-icon-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  font-size: 24px;
-  color: #8c8d96;
-}
-
-.gnb-menu-button {
-  color: #3da5f5;
+.gnb .gnb-icon-button.is-search {
+  margin-right: 4px;
 }
 
 .gnb .logo {
